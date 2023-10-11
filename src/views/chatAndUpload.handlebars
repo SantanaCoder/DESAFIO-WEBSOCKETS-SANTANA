@@ -1,0 +1,17 @@
+
+ <h1>subir archivos</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="archivo">selecciona un archivo</label>
+        <input type="file" name="archivo" id="archivo" required>
+        <button type="submit">subir archivo</button>
+    </form>
+
+   <div id="chat-form">
+    <h1>Chat directo a Mongo Atlas</h1>
+    <div id="chat-messages"></div>
+    <form id="chat-form" action="/api/message" method="POST">
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <input type="text" name="message" id="message" required>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
